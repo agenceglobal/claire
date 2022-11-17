@@ -1,0 +1,82 @@
+nav>ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: fixed;
+    width: 100%;
+    background: white;
+    margin: 0px;
+    top: 0;
+    height: 50px;
+}
+body {
+margin-top: 70px;
+}
+.cm {
+    height: 10cm;
+    width: 10cm;
+    background: aquamarine;
+}
+.mm {
+    height: 100mm;
+    width: 100mm;
+    background: aliceblue;
+}
+.in {
+    width: 3.94in;
+    height: 3.94in;
+    background: #065fd4;
+}
+.px {
+    background: bisque;
+    width: 378px;
+    height: 378px;
+}
+.puntos {
+    background: blueviolet;
+    width: 288pt;
+    height: 288pt;
+}
+.picas {
+    background: burlywood;
+    width: 24pc;
+    height: 24pc;
+}
+.absolutas {
+    display: flex;
+    flex-wrap: wrap;
+}
+.em {
+    background:  green;
+    height: 23em;
+    width: 23em;
+
+}
+.rem {
+    background: aquamarine;
+    width: 23rem;
+    height: 23rem;
+}
+.vh {
+    background: #0f0;
+    width: 38vh;
+    height: 38vh;
+}
+.vw {
+    background: chocolate;
+    width: 50vw;
+    height: 50vw;
+}
+.porcentaje {
+    background: crimson;
+    width: 50%;
+    height: 50%;
+}
+.coma {
+    background: cadetblue;
+    height: 10vh 100vw; 
+    width: 100vh 10vw; 
+}
+
+/* no afecta y no funciona pero sirve para poner cualquier duda*/
