@@ -5,6 +5,17 @@
         <meta charset="UTF-8">
         <link rel="stylesheet" href="/css/estilo.css">
         <title>Especilista en SEO Técnico </title>
+         <style>
+            td {
+         display: contents;
+        }
+        .divfotoflex {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+}
+        </style>
     </head>
 <body>
     <header>
@@ -18,7 +29,7 @@
     </nav>
     </header>
    <section>
-        <h1 style="color: rgb(17, 46, 114); font-size: 35px;">La especilización de un SEO Técnico</h1>
+        <h1 style="color: rgb(17, 46, 114); font-size: 35px; visibility: hidden;">La especilización de un SEO Técnico</h1>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/ix2taskI9dU?start=13" 
         title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
         encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -41,6 +52,10 @@
           </table>
         <div>Aquí vas a encontrar toda la información para convertirte en especialista en SEO Técnico</div>
         <p><a href="contactar.html">Infórmate sobre el curso de SEO Técnico</a></p>
+        <div class="imagenfalsa"></div>
+        <div class="opcionesimagen"></div>
+        <div class="imagenbackground">
+            <a href="https://www.agenceglobalweb.com/">Esto es enlace para la araña</a></div>
         <table>
             <tr id="informacion-principal">
                 <th>Tipo de Viaje</th>
@@ -56,11 +71,12 @@
             </tr>
         </table>
         <picture>
-        <img style="padding: 30px;" src="/imagenes/imagen-sobre-mi.png" alt="aspectos a trabajar del SEO Técnico" loading="lazy" width="800px" height="377px">
+        <img style="padding: 30px; display: none;" src="/imagenes/imagen-sobre-mi.png" alt="aspectos a trabajar del SEO Técnico" loading="lazy" width="800px" height="377px">
         </picture>
         <picture>
             <source type="image/avif" srcset="/imagenes/imagen-sobre-mi.avif">
-            <img src="/imagenes/imagen-sobre-mi.png" title="Imágen Aviv" alt="aspectos a trabajar del SEO Técnico" loading="lazy" width="800px" height="377px">
+            <div class="divfotoflex"><img src="/imagenes/imagen-sobre-mi.png" title="Imágen Aviv" alt="aspectos a trabajar del SEO Técnico" loading="lazy" width="800px" height="377px">
+                <div>Esto es un texto al lado de una imagen</div></div>
         </picture>
     <section>
         <video width="320" height="240"controls autoplay muted>
@@ -69,7 +85,7 @@
             Your browser does not support the video tag.
         </video>
     </section>
-        <div style="background-color: rgb(255, 219, 87); padding: 5px;" title="este div tiene un background amarillo">
+        <div style="background-color: rgb(255, 219, 87); padding: 5px; opacity: 0.5;" title="este div tiene un background amarillo">
             <h2 style="color: rgb(17, 46, 114);">Crawleo, Rendering e Indexación</h2>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ultrices massa vitae nibh blandit, eget pellentesque libero porttitor. Proin hendrerit id orci quis rutrum. Quisque tincidunt felis eget sem vulputate, ut accumsan leo venenatis. Proin molestie lectus at enim mollis, et iaculis ipsum faucibus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Morbi malesuada arcu nisl, porta volutpat turpis cursus et. Cras ipsum arcu, dignissim viverra libero nec, lobortis convallis nisi.
 

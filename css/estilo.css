@@ -1,3 +1,22 @@
+.cerrar {
+    position: fixed;
+    top: 5px;
+    right: 16px;
+    background: aquamarine;
+    padding: 10px;
+    border-radius: 50%;
+    font-weight: bold;
+    color: blue;
+    cursor: pointer;
+}
+a[href^="https:"]{
+    padding-right: 2em;
+    background-image: url(/imagenes/salida.png);
+    background-repeat: no-repeat;
+    z-index: 10;
+    background-size: 1em;
+    background-position-x: right;
+}
 nav>ul {
     list-style: none;
     display: flex;
@@ -9,6 +28,7 @@ nav>ul {
     margin: 0px;
     top: 0;
     height: 50px;
+    z-index: 10;
 }
 body {
 margin-top: 70px;
@@ -78,5 +98,54 @@ margin-top: 70px;
     height: 10vh 100vw; 
     width: 100vh 10vw; 
 }
+.imagenfalsa {
+    height: 399px;
+    width: 399px;
+    background-color: rgb(231, 14, 101);
+    background-attachment: inherit;
+    background-size: 299px, 299px;
+    background-image: url(/imagenes/arana.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 100px auto;
+    padding: 20px;
+    border: 5px solid black;
+}
+.opcionesimagen {
+    background-image: url(/imagenes/foto-perfil-sin-fondo.png);
+    height: 300px;
+    width: 1200px;
+    background-repeat: no-repeat;
+    background-color: aquamarine;
+    background-size: contain;
+    background-position: center;
+}
+.imagenbackground {
+    background: url(/imagenes/arana.png);
+    background-size: 2em;
+    background-repeat: no-repeat;
+    padding: 2.5em;
+    background-position-y: center;
+}
+[alt],[title]{
+    border: 2px solid rgb(255, 234, 0);
+    border-radius: 50px;
+}
+h2.intro ::after{
+    content:"este texto no existe" ;
+    background: #065fd4;
+    color: aliceblue;
+    display: block;
+    position: fixed;
+    background-position-y: bottom;
+}
+.divpadre {
+    background: #d7e4ef;
+}
+.parrafofirstletter p::first-letter {
+    color: crimson;
+}
+
+
 
 /* no afecta y no funciona pero sirve para poner cualquier duda*/

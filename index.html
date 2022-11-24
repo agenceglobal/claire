@@ -7,13 +7,34 @@
         <!--Es mi primer ejercicio en html-->
         <title>Este es el ejercicio de Claire Hernández</title>
         <style>
-            .intro {
+::selection {
+    background: blue;
+    color:yellow
+}
+.cerrar {
+    position: fixed;
+    top: 5px;
+    right: 16px;
+    background: aquamarine;
+    padding: 10px;
+    border-radius: 50%;
+    font-weight: bold;
+    color: blue;
+    cursor: pointer;
+    z-index: 10;
+}
+.intro {
     background: rgb(99, 99, 107);
     margin: 10px;
     padding-top: 6px;
     padding-bottom: 6px;
 }
-#bannerhome {padding: 20px;
+#bannerhome {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
 }
 h2.intro {
     color: rgb(246, 250, 244)!important;
@@ -51,7 +72,45 @@ div .intro {
 .herencias p {
     background: red;
 }
-        </style>
+em {
+    position: relative;
+    bottom: 50px;
+    color: blueviolet;
+}
+.arana {
+    position: absolute;
+    top: 30px;
+    right: 50px;
+    z-index: -1;
+}
+h1 {
+    color: rgb(17, 46, 114);
+    font-size: 35px;
+    position: fixed;
+    top: 60px;
+    left: 30px;
+}
+.divflex{
+    background-color: rgb(255, 219, 87);
+    display: flex;
+    padding: 5px;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: stretch;
+}
+.herencias {
+    display: inline-block;
+}
+.divpadre {
+    background: #d7e4ef;
+}
+p:first-child {
+    background: rgb(136, 136, 156);
+}
+.parrafofirstletter p:first-letter {
+    color: crimson;
+}
+         </style>
     </head>
 <body>
     <header>
@@ -62,21 +121,23 @@ div .intro {
             <li><a href="/contactar.html">Contacto</a></li>
             <li><a href="https://www.agenceglobalweb.com/" target="_blank">Mi web</a></li>
          </ul>
+         <div class="cerrar">X</div>
     </nav>
     </header>
    <section id="bannerhome">
-        <h1 style="color: rgb(17, 46, 114); font-size: 35px;">Hola me llamo Claire</h1>
+        <h1>Hola me llamo Claire</h1>
         <div class="intro">Estoy empezando el curso de SEO Técnico en Asdrubal Academy
             <div>div para ver la class1  .class2</div>
         </div>
         <div class="medidas">
         <p class="coma">Descubre las <b style="color: rgb(17, 46, 114); font-style: italic;">habilidades</b> del <a href="seo-tecnico.html">SEO Técnico</a></p>
         </div>
-        <img style="padding: 30px;" src="/imagenes/imagen-seo-tecnico.png" alt="habilidades del SEO Técnico">
-        
-        <div style="background-color: rgb(255, 219, 87); padding: 5px;" title="este div tiene un background amarillo">
+        <img style="padding: 30px; z-index: -2;" src="/imagenes/imagen-seo-tecnico.png" alt="habilidades del SEO Técnico">
+    </section>  
+    <section id="cuerpo"> 
+        <div class="divflex" title="este div tiene un background amarillo">
             <h2 style="color: rgb(17, 46, 114);">Como se desarrolla el curso de SEO</h2>
-            <h2 class="intro"style="color: rgb(17, 46, 114);">Este H2 es element class</h2>
+            <h2 class="intro"style="color: rgb(17, 46, 114);">Este <em>H2</em> es element class y posición relativa</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ultrices massa vitae nibh blandit, eget pellentesque libero porttitor. Proin hendrerit id orci quis rutrum. Quisque tincidunt felis eget sem vulputate, ut accumsan leo venenatis. Proin molestie lectus at enim mollis, et iaculis ipsum faucibus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Morbi malesuada arcu nisl, porta volutpat turpis cursus et. Cras ipsum arcu, dignissim viverra libero nec, lobortis convallis nisi.
 
             Phasellus pulvinar lobortis tortor vel mollis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed dapibus diam sem, vitae eleifend diam pretium dictum. Morbi molestie, orci ut rutrum aliquet, diam nunc pharetra eros, vel dictum libero risus dignissim libero. Duis id posuere enim. Phasellus sit amet nulla posuere, iaculis metus sit amet, aliquet neque. Sed tristique lacinia lorem in hendrerit. Integer tempor urna nibh, vel tristique nisi congue a.
@@ -97,6 +158,19 @@ div .intro {
                         
              In non purus sodales, dapibus enim ut, venenatis lacus. Nunc elementum rutrum dolor nec aliquet. Quisque ante sapien, fermentum in justo vitae, consectetur interdum nisi. Fusce blandit commodo sapien nec interdum. Quisque elementum dapibus dolor sit amet volutpat. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque tincidunt, ante sit amet tempor lobortis, mauris nulla sollicitudin dui, et dignissim diam ligula vel tellus. Curabitur tincidunt ante sed dui feugiat malesuada. Nunc tincidunt, elit vel vulputate euismod, lacus odio accumsan mi, non feugiat eros ligula eget mauris. In vehicula orci lorem, vel fermentum justo posuere sit amet. Aenean blandit ac dui vel convallis. Fusce euismod odio vel leo tincidunt aliquam. Nunc accumsan bibendum ex, quis tempus diam porttitor vitae. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;</p> 
         </div>
+        <img class="arana" src="/imagenes/arana.png">
+        <div class="divpadre">
+            <a href="https://www.agenceglobalweb.com/"></a>
+            <div class="parrafofirstletter">Esto es un div hijo</div>
+            <p>esto des un parrafo hijo</p>
+            <p>segundo parrafo hijo</p>
+            <p>tercer parrafo hijo</p>
+            <div>
+                <div>este es otro div dentro</div>
+                <div><p>esto es otro div con un párrafo y un <span>span</span></p></div>
+            </div>
+                <p>cuarto párrafo</p>
+        </div>
     </section>
     <div class="herencias">
         <div class="parrafo"><p>parrafo 1 que pertence a párrafo</p>
@@ -107,6 +181,7 @@ div .intro {
     <address class="intro">
     (c) <a href="mailto:clairehernandezespin@gmail.com">E mail Claire</a>
      Paris (Francia)
+     <a href="https://www.agenceglobalweb.com/" target="_blank">Mi web</a>
     </address>
 </footer>
 </body>
