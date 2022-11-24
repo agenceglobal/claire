@@ -6,8 +6,9 @@
     padding: 10px;
     border-radius: 50%;
     font-weight: bold;
-    color: blue;
+    color: yellow;
     cursor: pointer;
+    z-index: 10;
 }
 a[href^="https:"]{
     padding-right: 2em;
