@@ -1,12 +1,17 @@
+:root{
+    --yellow: rgb(233, 218, 61);
+    --turquesa: rgba(127, 255, 212, 0.82);
+    --azul: rgb(15, 30, 63);
+}
 .cerrar {
     position: fixed;
     top: 5px;
     right: 16px;
-    background: aquamarine;
+    background: var(--turquesa);
     padding: 10px;
     border-radius: 50%;
     font-weight: bold;
-    color: blue;
+    color: var(--azul);
     cursor: pointer;
 }
 a[href^="https:"]{
@@ -32,6 +37,8 @@ nav>ul {
 }
 body {
 margin-top: 70px;
+font-family: roboto, sans-serif;
+font-weight: 400;
 }
 .cm {
     height: 10cm;
@@ -41,12 +48,12 @@ margin-top: 70px;
 .mm {
     height: 100mm;
     width: 100mm;
-    background: aliceblue;
+    background: alicevar(--azul);
 }
 .in {
     width: 3.94in;
     height: 3.94in;
-    background: #065fd4;
+    background: var(--azul);
 }
 .px {
     background: bisque;
@@ -74,7 +81,7 @@ margin-top: 70px;
 
 }
 .rem {
-    background: aquamarine;
+    background: var(--turquesa);
     width: 23rem;
     height: 23rem;
 }
@@ -94,7 +101,7 @@ margin-top: 70px;
     height: 50%;
 }
 .coma {
-    background: cadetblue;
+    background: cadetvar(--azul);
     height: 10vh 100vw; 
     width: 100vh 10vw; 
 }
@@ -116,9 +123,16 @@ margin-top: 70px;
     height: 300px;
     width: 1200px;
     background-repeat: no-repeat;
-    background-color: aquamarine;
     background-size: contain;
     background-position: center;
+    width: calc(100% - 40px);
+    margin: auto;
+    transition: width 2s, height 5s;
+    transition-delay: 1s;
+}
+.opcionesimagen:hover {
+    width: 800px;
+    height: 400px;
 }
 .imagenbackground {
     background: url(/imagenes/arana.png);
@@ -128,13 +142,13 @@ margin-top: 70px;
     background-position-y: center;
 }
 [alt],[title]{
-    border: 2px solid rgb(255, 234, 0);
+    border: 2px solid var(--yellow);
     border-radius: 50px;
 }
 h2.intro ::after{
     content:"este texto no existe" ;
-    background: #065fd4;
-    color: aliceblue;
+    background: var(--azul);
+    color: alicevar(--azul);
     display: block;
     position: fixed;
     background-position-y: bottom;
@@ -144,6 +158,49 @@ h2.intro ::after{
 }
 .parrafofirstletter p::first-letter {
     color: crimson;
+}
+#preguntas-frecuentes {
+    background: var(--azul);
+    color: var(--yellow);
+    animation-name: cambiocolor;
+    animation-duration: 5s;
+}
+@keyframes cambiocolor {
+    from {background: var(--azul);}
+    to {background: var(--turquesa);}
+}
+img {
+    max-width: 100%;
+}
+#cuerpo {
+    max-width: 1500px;
+    margin: auto;
+}
+h1 {background: rgb(244,215,38);
+    background: linear-gradient(219deg, rgba(244,215,38,1) 2%, rgba(9,9,121,0.850577731092437) 51%, rgba(9,9,121,1) 100%);}
+/*Responsive que no me sale*/
+@media all and (min-width: 400px) and (max-width: 800px){
+    #preguntas-frecuentes {
+        background: #0f0;
+    }
+}
+@media all and (max-width: 700px){
+    nav>ul {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        align-items: flex-start;
+    }
+    nav>ul li{
+        margin: 6px opx;
+    }
+}
+@media all and (min-width: 2200px)
+{
+    * {
+        max-width: 2200px;
+        margin: auto;
+       }
 }
 
 

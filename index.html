@@ -3,13 +3,15 @@
     <head> 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="UTF-8">
+<link href="/css/fonts.css" rel="stylesheet">
+
         <link rel="stylesheet" href="/css/estilo.css">
         <!--Es mi primer ejercicio en html-->
         <title>Este es el ejercicio de Claire Hernández</title>
         <style>
 ::selection {
-    background: blue;
-    color:yellow
+    background: var(--azul);
+    color:var(--yellow);
 }
 .cerrar {
     position: fixed;
@@ -19,7 +21,7 @@
     padding: 10px;
     border-radius: 50%;
     font-weight: bold;
-    color: blue;
+    color: var(--azul);
     cursor: pointer;
     z-index: 10;
 }
@@ -84,14 +86,14 @@ em {
     z-index: -1;
 }
 h1 {
-    color: rgb(17, 46, 114);
+    color: #f7fcff;
     font-size: 35px;
     position: fixed;
     top: 60px;
     left: 30px;
 }
 .divflex{
-    background-color: rgb(255, 219, 87);
+    background-color: var(--yellow);
     display: flex;
     padding: 5px;
     flex-wrap: nowrap;
@@ -114,7 +116,7 @@ p:first-child {
     </head>
 <body>
     <header>
-    <nav style="background-color: rgb(255, 219, 87); padding: 10px;">
+    <nav style="background-color: var(--yellow); padding: 10px;">
         <ul>
             <li><a href="/">Home</a></li>
             <li class="intro class2"><a href="/seo-tecnico.html">SEO Técnico</a></li>
@@ -130,14 +132,14 @@ p:first-child {
             <div>div para ver la class1  .class2</div>
         </div>
         <div class="medidas">
-        <p class="coma">Descubre las <b style="color: rgb(17, 46, 114); font-style: italic;">habilidades</b> del <a href="seo-tecnico.html">SEO Técnico</a></p>
+        <p class="coma">Descubre las <b style="color: var(--azul); font-style: italic;">habilidades</b> del <a href="seo-tecnico.html">SEO Técnico</a></p>
         </div>
         <img style="padding: 30px; z-index: -2;" src="/imagenes/imagen-seo-tecnico.png" alt="habilidades del SEO Técnico">
     </section>  
     <section id="cuerpo"> 
         <div class="divflex" title="este div tiene un background amarillo">
-            <h2 style="color: rgb(17, 46, 114);">Como se desarrolla el curso de SEO</h2>
-            <h2 class="intro"style="color: rgb(17, 46, 114);">Este <em>H2</em> es element class y posición relativa</h2>
+            <h2 style="color: var(--azul);">Como se desarrolla el curso de SEO</h2>
+            <h2 class="intro"style="color: var(--azul);">Este <em>H2</em> es element class y posición relativa</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ultrices massa vitae nibh blandit, eget pellentesque libero porttitor. Proin hendrerit id orci quis rutrum. Quisque tincidunt felis eget sem vulputate, ut accumsan leo venenatis. Proin molestie lectus at enim mollis, et iaculis ipsum faucibus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Morbi malesuada arcu nisl, porta volutpat turpis cursus et. Cras ipsum arcu, dignissim viverra libero nec, lobortis convallis nisi.
 
             Phasellus pulvinar lobortis tortor vel mollis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed dapibus diam sem, vitae eleifend diam pretium dictum. Morbi molestie, orci ut rutrum aliquet, diam nunc pharetra eros, vel dictum libero risus dignissim libero. Duis id posuere enim. Phasellus sit amet nulla posuere, iaculis metus sit amet, aliquet neque. Sed tristique lacinia lorem in hendrerit. Integer tempor urna nibh, vel tristique nisi congue a.
