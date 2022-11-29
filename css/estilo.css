@@ -13,6 +13,7 @@
     font-weight: bold;
     color: var(--azul);
     cursor: pointer;
+    z-index: 10;
 }
 a[href^="https:"]{
     padding-right: 2em;
