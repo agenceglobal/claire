@@ -49,7 +49,7 @@ font-weight: 400;
 .mm {
     height: 100mm;
     width: 100mm;
-    background: alicevar(--azul);
+    background: var(--azul);
 }
 .in {
     width: 3.94in;
