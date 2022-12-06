@@ -1,18 +1,13 @@
-<!DOCTYPE html>
-<html lang="es">
-    <head> 
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta charset="UTF-8">
+<?php include $_SERVER['DOCUMENT_ROOT'].'/assets/header.php';
+?>
 
-        <link href="/css/fonts.css" rel="stylesheet">
-        
-        <link rel="stylesheet" href="/css/estilo.css">
-        <!--Es mi primer ejercicio en html-->
-        <title>Este es el ejercicio de Claire Hernández</title>
-        <style>
+<?php
+echo $_SERVER['DOCUMENT_ROOT'];
+?>
+     <style>
 ::selection {
     background: var(--azul);
-    color:var(--yellow);
+    color: var(--yellow);
 }
 .cerrar {
     position: fixed;
@@ -113,22 +108,32 @@ p:first-child {
 .parrafofirstletter p:first-letter {
     color: crimson;
 }
-         </style>
-    </head>
-<body>
-    <header>
-    <nav style="background-color: var(--yellow); padding: 10px;">
-        <ul>
-            <li><a href="/">Home</a></li>
-            <li class="intro class2"><a href="/seo-tecnico.html">SEO Técnico</a></li>
-            <li><a href="/contactar.html">Contacto</a></li>
-            <li><a href="https://www.agenceglobalweb.com/" target="_blank">Mi web</a></li>
-         </ul>
-         <div class="cerrar">X</div>
-    </nav>
-    </header>
+    </style>    
+ 
    <section id="bannerhome">
         <h1>Hola me llamo Claire</h1>
+        <h2><?php echo "Hola Carlos este es mi primer contacto con php";?></h2>
+        <h2 class="intro">Hoy es <?php echo date ("d/M/Y/s") ;?></h2>
+        <h2 class="intro">Hoy es <?php echo date("F j, Y, g:i a");?></h2>
+     <?php
+        $curso = "Curso de SEO Técnico";
+        $seo = "google";
+        if ($seo == "google")
+        echo "$curso" . " en Asdrubal Academy " . "clase PHP";
+    ?>
+    <?php 
+        $num = 6;
+        if($num > 6){
+         echo '</p>El número es mayor que 6';
+        }
+        elseif($num == 6){
+        echo '</p>El número es igual que 6';
+       }
+        else {
+        echo '</p> El número NO es mayor que 6';
+        }
+    ?>
+
         <div class="intro">Estoy empezando el curso de SEO Técnico en Asdrubal Academy
             <div>div para ver la class1  .class2</div>
         </div>
@@ -141,7 +146,7 @@ p:first-child {
         <div class="divflex" title="este div tiene un background amarillo">
             <h2 style="color: var(--azul);">Como se desarrolla el curso de SEO</h2>
             <h2 class="intro"style="color: var(--azul);">Este <em>H2</em> es element class y posición relativa</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ultrices massa vitae nibh blandit, eget pellentesque libero porttitor. Proin hendrerit id orci quis rutrum. Quisque tincidunt felis eget sem vulputate, ut accumsan leo venenatis. Proin molestie lectus at enim mollis, et iaculis ipsum faucibus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Morbi malesuada arcu nisl, porta volutpat turpis cursus et. Cras ipsum arcu, dignissim viverra libero nec, lobortis convallis nisi.
+            <p> dolor sit amet, consectetur adipiscing elit. Ut ultrices massa vitae nibh blandit, eget pellentesque libero porttitor. Proin hendrerit id orci quis rutrum. Quisque tincidunt felis eget sem vulputate, ut accumsan leo venenatis. Proin molestie lectus at enim mollis, et iaculis ipsum faucibus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Morbi malesuada arcu nisl, porta volutpat turpis cursus et. Cras ipsum arcu, dignissim viverra libero nec, lobortis convallis nisi.
 
             Phasellus pulvinar lobortis tortor vel mollis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed dapibus diam sem, vitae eleifend diam pretium dictum. Morbi molestie, orci ut rutrum aliquet, diam nunc pharetra eros, vel dictum libero risus dignissim libero. Duis id posuere enim. Phasellus sit amet nulla posuere, iaculis metus sit amet, aliquet neque. Sed tristique lacinia lorem in hendrerit. Integer tempor urna nibh, vel tristique nisi congue a.
                 
@@ -180,12 +185,5 @@ p:first-child {
         </div>
     <p>parrafo 2 que pertenece a herencias</p>
     </div>
-<footer>
-    <address class="intro">
-    (c) <a href="mailto:clairehernandezespin@gmail.com">E mail Claire</a>
-     Paris (Francia)
-     <a href="https://www.agenceglobalweb.com/" target="_blank">Mi web</a>
-    </address>
-</footer>
-</body>
-</html>
+    <?php include $_SERVER['DOCUMENT_ROOT'].'/assets/footer.php';
+?>

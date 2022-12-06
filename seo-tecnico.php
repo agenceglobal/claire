@@ -1,33 +1,5 @@
-<!DOCTYPE html>
-<html lang="es">
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="/css/estilo.css">
-        <title>Especilista en SEO Técnico </title>
-         <style>
-            td {
-         display: contents;
-        }
-        .divfotoflex {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-around;
-}
-        </style>
-    </head>
-<body>
-    <header>
-    <nav style="background-color: rgb(255, 219, 87); padding: 10px;">
-        <ul>
-            <li><a href="/index.html">Home</a></li>
-            <li><a href="/seo-tecnico.html">SEO Técnico</a></li>
-            <li><a href="/contactar.html">Contacto</a></li>
-            <li><a href="https://www.agenceglobalweb.com/" target="_blank">Mi web</a></li>
-         </ul>
-    </nav>
-    </header>
+<?php include $_SERVER['DOCUMENT_ROOT'].'/assets/header.php';
+?>
    <section>
         <h1 style="color: var(--yellow); font-size: 35px;">La especilización de un SEO Técnico</h1>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/ix2taskI9dU?start=13" 
@@ -118,11 +90,5 @@ In non purus sodales, dapibus enim ut, venenatis lacus. Nunc elementum rutrum do
         <div class="porcentaje">porcentaje del tamaño del elemento padre</div>
         </div>
     </section>
-<footer>
-    <address>
-     (c) <a href="mailto:clairehernandezespin@gmail.com">E mail Claire</a>
-     Paris (Francia)
-     </address>
-</footer>
-</body>
-</html>
+    <?php include $_SERVER['DOCUMENT_ROOT'].'/assets/footer.php';
+?>
